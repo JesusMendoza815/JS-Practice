@@ -35,4 +35,4 @@ const validarEmail = (email) => {
         console.log('El correo es válido');
     }
 }
-validarEmail("jesus@gmail.com");
+validarEmail("jesus@gmail.c");
