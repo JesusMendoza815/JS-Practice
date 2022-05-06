@@ -12,3 +12,18 @@ const nMayorMenor = (n1,n2,n3) => {
 nMayorMenor(3,2,8)
 
 // 23) Programa una función que dado un array de números devuelva un objeto con 2 arreglos en el primero almacena los números pares y en el segundo los impares, pe. miFuncion([1,2,3,4,5,6,7,8,9,0]) devolverá {pares: [2,4,6,8,0], impares: [1,3,5,7,9]}.
+const paresImpares = () => {
+    const numeros = [1,2,3,4,5,6,7,8,9,10],
+          pares = [],
+          impares = [];
+    numeros.forEach((element, i) => {
+        if (numeros[i] % 2 === 0) {
+            pares.push(numeros[i]);
+        } else {
+            impares.push(numeros[i]);
+        }
+    })
+    console.log(pares);
+    console.log(impares);
+}
+paresImpares();
