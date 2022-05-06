@@ -4,6 +4,17 @@ const arrayCuadrado = (n1,n2) => {
     numeros.forEach((element, i) => console.log(Math.pow(numeros[i],2)));
 }
 arrayCuadrado(2,4);
+
+const arrayCuadradoJMircha = (arr = undefined) => {
+    if (arr === undefined || arr.length === 0) return console.warn("No ingresaste valores");
+    if (!(arr instanceof Array)) return console.warn("El valor no es un array");
+    for (let element of arr) {
+        if(typeof element !== "number") return console.warn(`El valor ${element} no es un number`);
+    }
+    const newArray = arr.map(el => el * el);
+    return console.warn(`Àrreglo original ${arr}./nArreglo elevado al cuadrado ${newArray}`)
+}
+arrayCuadradoJMircha([2,4]);
 // 22) Programa una función que dado un array devuelva el número mas alto y el más bajo de dicho array, pe. miFuncion([1, 4, 5, 99, -60]) devolverá [99, -60].
 const nMayorMenor = (n1,n2,n3) => {
     let array = [n1,n2,n3];
@@ -27,3 +38,17 @@ const paresImpares = () => {
     console.log(impares);
 }
 paresImpares();
+
+const paresImparesJmircha = (arr = undefined) => {
+    if (arr === undefined || arr.length === 0) return console.warn("No ingresaste valores");
+    if (!(arr instanceof Array)) return console.warn("El valor no es un array");
+    for (let element of arr) {
+        if(typeof element !== "number") return console.warn(`El valor ${element} no es un number`);
+    }
+
+    return console.info({
+        pares: arr.filter(element => element % 2 === 0),
+        impares: arr.filter(element => element % 2 !== 0)
+    })
+}
+paresImparesJmircha([1,2,3,4,5,6,7,8,9]);
