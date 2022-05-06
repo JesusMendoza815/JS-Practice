@@ -1,7 +1,7 @@
 // 21) Programa una función que dado un array numérico devuelve otro array con los números elevados al cuadrado, pe. mi_funcion([1, 4, 5]) devolverá [1, 16, 25].
 const arrayCuadrado = (n1,n2) => {
     const numeros = [n1,n2];
-    numeros.forEach(element => console.log(element*2));
+    numeros.forEach((element, i) => console.log(Math.pow(numeros[i],2)));
 }
 arrayCuadrado(2,4);
 // 22) Programa una función que dado un array devuelva el número mas alto y el más bajo de dicho array, pe. miFuncion([1, 4, 5, 99, -60]) devolverá [99, -60].
