@@ -41,7 +41,7 @@ class Perro extends Animal {
     }
 }
 
-Perro.queEres();
+// Perro.queEres();
 
 const mimi = new Animal("Mimi","Hembra"),
       Scooby = new Perro("Scooby","Macho","Grande");
