@@ -11,20 +11,14 @@ const primo = (numero) => {
             break;
         }
     }
+    console.log(divisible);
     return (divisible)
-    ? console.log(`El numero ${numero} NO es primo`) //falso
-    : console.log(`El numero ${numero} SI es primo`)//verdadero
+    ? console.log(`El numero ${numero} NO es primo`) //Verdader
+    : console.log(`El numero ${numero} SI es primo`)//Falso
 }
-primo(3);
+primo(4);
 // 13) Programa una función que determine si un número es par o impar, pe. miFuncion(29) devolverá Impar.
 const nPar = (n) => {
-    // let par = false;
-    // if (n % 2 === 0) {
-    //     par = true;
-    //     console.log(par);
-    // } else {
-    //     console.log(par);
-    // }
     (n % 2 === 0) ? console.log("Si es") : console.log("no es");
 }
 nPar(4);

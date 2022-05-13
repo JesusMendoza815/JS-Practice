@@ -1,4 +1,7 @@
 //Tipos de timers
+/*
+
+*/
 
 /*setTimeout se ejecuta despues del tiempo asigando (milisegundos)
 setTimeout(() => {

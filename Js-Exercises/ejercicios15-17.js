@@ -15,7 +15,7 @@ const convertir = (n, base)=> {
 }
 const convertirCorto = (n, base) => {
     if (base == 2) {
-        console.log(`Valor ${n}, base ${base} --> Valor ${parseInt(n, base)} base 10`);
+        console.log(`Valor ${n}, base ${base} --> Valor ${parseInt(n, base)} base 2`);
     } else if (base == 10) {
         console.log(`Valor ${n}, base ${base} --> Valor ${n.toString(10)} base 10`);
     }
