@@ -9,5 +9,6 @@ console.log($card.classList.contains("rotate-135"));
 $card.classList.toggle("rotate-135");//here toggel removed the class
 console.log($card.classList.contains("rotate-135"));
 $card.classList.add("rotate-135", "opacity-80", "sepia");
+$card.classList.remove("rotate-135");
 // $card.classList.remove("rotate-135", "opacity-80", "sepia");
 
