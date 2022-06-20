@@ -1,4 +1,4 @@
-const $cards = document.querySelector(".card"),
+const $cards = document.querySelector(".cards"),
     $template = document.getElementById("template-card").content,
     $fragment = document.createDocumentFragment(),
     cardContent = [
