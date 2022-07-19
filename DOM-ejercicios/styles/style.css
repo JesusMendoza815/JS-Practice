@@ -1,0 +1,99 @@
+/* *{
+    border: 2px solid #000;
+} */
+
+html {
+    scroll-behavior: smooth !important;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+}
+button:hover {
+    cursor: pointer;
+}
+
+#nav_container {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+    height: 15%;
+    background-color: yellow;
+}
+
+.link_nav {
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    margin: auto 25px;
+    background-color: black;
+}
+
+
+/* BURGER MENU */
+#burger_menu {
+    display: flex;
+    position: fixed;  /*(fija)Fixed ocupa toda la pantalla dependiendo el index*/
+    z-index: 998; /*Entre más alto sea index, más alta será la jerarquía del fixed*/
+    /* visibility: hidden; */
+    background: rgba(14, 14, 14, 0.8);
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+    transform: translate(0, -100%);
+}
+
+#burger_menu.is-active {
+    transform: translate(0, 0);
+}
+
+.link_burger_menu {
+    /* background-color: transparent; */
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    margin: 5px;
+    padding: 25px 100%;
+    transition: all 0.3s ease;
+
+}
+.link_burger_menu:hover {
+    background-color: yellow;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+}
+/* MAIN */
+.section {
+    text-align: center;
+    padding-top: 30px;
+    width: 100%;
+    min-height: 100vh;
+}
+
+
+/* FOOTER */
+#footer {
+    display: flex;
+    justify-content:flex-end;
+    padding: 5px;
+    height: auto;
+}
+
+#btn_show {
+    position: fixed;
+    z-index: 999;
+    bottom: 1.5vh;
+    right: 1.5vh;
+    padding: 10px 25px;
+    border-radius: 50%;
+    font-size: 60px;
+    background-color: yellow;
+}
+

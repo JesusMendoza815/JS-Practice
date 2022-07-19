@@ -18,5 +18,5 @@ $btnCerrar.addEventListener('click', (e) => {
     ventana.close();
 });
 $btnImprimir.addEventListener('click', (e) => {
-
+    window.print();
 });
